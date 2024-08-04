@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="600.0" style="-fx-background-color: rgb(121, 240, 0);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="azamat.Booking">
+   <children>
+      <Text fill="#f3be1d" layoutX="233.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking">
+         <font>
+            <Font name="Mogra Regular" size="35.0" />
+         </font>
+      </Text>
+      <VBox layoutX="42.0" layoutY="68.0" prefHeight="595.0" prefWidth="517.0" spacing="10.0">
+         <children>
+            <Text fill="#fa0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="113.2933349609375">
+               <font>
+                  <Font name="Mogra Regular" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nameTextField" prefHeight="26.0" prefWidth="247.0" style="-fx-background-color: f3be1d; -fx-text-fill: rgb(130, 0, 255);">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Mogra Regular" size="11.0" />
+               </font>
+            </TextField>
+            <Text fill="#fa0101" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" wrappingWidth="113.2933349609375">
+               <font>
+                  <Font name="Mogra Regular" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="emailTextField" prefHeight="26.0" prefWidth="247.0" style="-fx-background-color: f3be1d; -fx-text-fill: rgb(130, 0, 255);">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Mogra Regular" size="11.0" />
+               </font>
+            </TextField>
+            <Text fill="#fa0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" wrappingWidth="113.2933349609375">
+               <font>
+                  <Font name="Mogra Regular" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="phoneTextField" prefHeight="26.0" prefWidth="247.0" style="-fx-background-color: f3be1d; -fx-text-fill: rgb(130, 0, 255);">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Mogra Regular" size="11.0" />
+               </font>
+            </TextField>
+            <Text fill="#fa0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="113.2933349609375">
+               <font>
+                  <Font name="Mogra Regular" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="dateTextField" prefHeight="26.0" prefWidth="247.0" style="-fx-background-color: f3be1d; -fx-text-fill: rgb(130, 0, 255);">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Mogra Regular" size="11.0" />
+               </font>
+            </TextField>
+            <Text fill="#fa0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="113.2933349609375">
+               <font>
+                  <Font name="Mogra Regular" size="18.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="30.0" prefWidth="184.0" spacing="5.0">
+               <children>
+                  <ChoiceBox fx:id="hoursChoiceBox" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: rgb(243, 190, 29); -fx-text-fill: rgb(130, 0, 255);" />
+                  <ChoiceBox fx:id="minutesChoiceBox" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: rgb(243, 190, 29); -fx-text-fill: rgb(130, 0, 255);" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Text fill="#fa0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Size" wrappingWidth="113.2933349609375">
+               <font>
+                  <Font name="Mogra Regular" size="18.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="sizeChoiceBox" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: rgb(243, 190, 29); -fx-text-fill: rgb(130, 0, 255);">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Text fill="#fa0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Special Requests" wrappingWidth="154.09332275390625">
+               <font>
+                  <Font name="Mogra Regular" size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="specialRequestsChoiceBox" prefHeight="74.0" prefWidth="365.0" style="-fx-control-inner-background: rgb(243, 190, 29); -fx-background-color: fa0101; -fx-text-fill: rgb(130, 0, 255);">
+               <font>
+                  <Font name="Mogra Regular" size="12.0" />
+               </font>
+            </TextArea>
+         </children>
+      </VBox>
+      <StackPane fx:id="confirmPane" layoutX="243.0" layoutY="663.0" onMouseClicked="#confirmPanePressed" prefHeight="42.0" prefWidth="114.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#ffc71e" height="42.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="113.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#fa0101" height="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="102.0" />
+            <Text fill="#ffc71e" strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIRM" textAlignment="CENTER" wrappingWidth="102.0">
+               <font>
+                  <Font name="Mogra Regular" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+   </children>
+</Pane>

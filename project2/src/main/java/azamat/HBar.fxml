@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="hBar" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="600.0" spacing="10.0" style="-fx-background-radius: 15; -fx-background-color: rgb(130, 0, 255);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="azamat.HBarController">
+   <children>
+      <StackPane fx:id = "adminStackPane" onMouseClicked="#adminStackPaneClicked" prefHeight="1.0" prefWidth="12.0">
+         <children>
+            <Circle fx:id="adminCircle" fill="#23d3e7" radius="8.0" stroke="#23d3e7" strokeType="INSIDE" />
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+         <HBox.margin>
+            <Insets right="285.0" />
+         </HBox.margin>
+      </StackPane>
+      <Label fx:id="bookingLabel" onMouseClicked="#bookingLabelClicked" prefHeight="32.0" prefWidth="55.0" style="-fx-background-radius: 15;" text="Booking" textFill="#23d3e7">
+         <font>
+            <Font name="Mogra Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="galleryLabel" onMouseClicked="#galleryLabelClicked" prefHeight="32.0" prefWidth="52.0" style="-fx-background-radius: 15;" text="Gallery" textFill="#23d3e7">
+         <font>
+            <Font name="Mogra Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="menuLabel" onMouseClicked="#menuLabelClicked" prefHeight="32.0" prefWidth="37.0" style="-fx-background-radius: 15;" text="Menu" textFill="#23d3e7">
+         <font>
+            <Font name="Mogra Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="contactLabel" onMouseClicked="#contactLabelClicked" prefHeight="32.0" prefWidth="54.0" style="-fx-background-radius: 15;" text="Contact" textFill="#23d3e7">
+         <font>
+            <Font name="Mogra Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="exitLabel" onMouseClicked="#exitLabelClicked" prefHeight="32.0" prefWidth="38.0" style="-fx-background-radius: 15;" text="Exit" textFill="#23d3e7">
+         <font>
+            <Font name="Mogra Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>
